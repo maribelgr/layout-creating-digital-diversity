@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 .header {
@@ -17,9 +18,8 @@
   margin-top: 10px;
 }
 
-.link {
+.container {
   margin-top: 10px;
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
   color: #4a4a4a;
   display: flex;
@@ -29,14 +29,18 @@
   padding: 0;
 }
 
-.blog {
+.item {
   text-transform: uppercase;
-  margin-right: 20px;
-  margin-bottom: 13px;
 }
 
-.contact {
-  text-transform: uppercase;
+.item a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.link__blog {
+  margin-right: 20px;
+  margin-bottom: 13px;
 }
 
 .main {
@@ -47,16 +51,18 @@
   height: 100vh;
 }
 
-.text {
+.title {
   font-family: "Rubik", sans-serif;
   font-size: 30px;
   color: white;
+  text-transform: capitalize;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   text-align: center;
+  max-width: 100px;
 }
 
 @media all and (min-width: 768px) {
@@ -71,22 +77,19 @@
     margin-left: 30px;
   }
 
-  .link {
+  .container {
     margin-top: 0;
   }
 
-  .blog {
-    margin-right: 20px;
+  .link__blog {
     margin-bottom: 0;
   }
 
-  .contact {
+  .link__contact {
     margin-right: 30px;
   }
 
-  .text {
+  .title {
     font-size: 40px;
-    text-align: center;
-    justify-content: center;
   }
 }
