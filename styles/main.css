@@ -31,16 +31,13 @@
 
 .item {
   text-transform: uppercase;
+  margin-bottom: 13px;
 }
 
 .item a {
   text-decoration: none;
   color: #4a4a4a;
-}
-
-.link__blog {
-  margin-right: 20px;
-  margin-bottom: 13px;
+  padding: 10px;
 }
 
 .main {
@@ -79,14 +76,11 @@
 
   .container {
     margin-top: 0;
+    margin-right: 20px;
   }
 
-  .link__blog {
+  .item {
     margin-bottom: 0;
-  }
-
-  .link__contact {
-    margin-right: 30px;
   }
 
   .title {
